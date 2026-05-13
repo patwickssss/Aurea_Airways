@@ -13,8 +13,7 @@ body {
 
 
 nav {background-color: var(--color-1); height: 70px; width: 100vw; min-width: 600px; display: flex; align-items: center; justify-content: space-around;}
-nav img {height: 50px; width: 150px; background-color: var(--color-1); box-sizing: border-box;}
-.nav a {position: relative; text-decoration: none; font-family:'Poppins', sans-serif; color: var(--color-2); font-size: 8px; font-weight:550; letter-spacing: 0.5px; padding: 0 8px;}
-.nav a::after {content: ""; position: absolute; background-color: var(--color-3); height: 3px; width: 0; left: 0; bottom: -10px; transition: 0.3s;}
+nav img {height: 40px; width: 150px; background-color: var(--color-1); box-sizing: border-box;}
+.nav a {position: relative; text-decoration: none; font-family:'Inter', sans-serif; color: var(--color-2); font-size: 8px; font-weight:550; letter-spacing: 0.5px; padding: 0 8px;}
+.nav a::after {content: ""; position: absolute; background-color: #D19924; height: 3px; width: 0; left: 0; bottom: -10px; transition: 0.3s;}
 .nav a:hover:after {width: 100%;}
-nav button {width: 80px; padding: 10px; background: var(--color-3); border: none; border-radius: 10px; font-size: 12px; color: var(--color-5);}

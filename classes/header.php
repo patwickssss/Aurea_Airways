@@ -1,13 +1,13 @@
 <style></style>
 <nav>
-    <img id="logo" src="" alt="LOGO">
+    <img id="logo" src="img/LOGO.svg" alt="LOGO">
     <div class="nav">
-        <a href="">Lorem Ipsum</a>
-        <a href="">Lorem Ipsum</a>
-        <a href="">Lorem Ipsum</a>
-        <a href="">Lorem Ipsum</a>
-        <a href="">Lorem Ipsum</a>
+        <a href="">Home</a>
+        <a href="">Flights</a>
+        <a href="">Destinations</a>
+        <a href="">Promos</a>
+        <a href="">Contact</a>
+        
     </div>
     
-    <button>Login</button>
 </nav>
