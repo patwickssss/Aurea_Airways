@@ -7,6 +7,7 @@
         <a href="">Destinations</a>
         <a href="">Promos</a>
         <a href="">Contact</a>
+        <a href="">Login/Signup</a>
         
     </div>
     

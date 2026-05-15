@@ -3,17 +3,234 @@
     --color-2: #272626;
     --color-3: #ebc641;
     --color-4: #d6a911;
-    --color-5: #01298f;
+    --color-5: #012A6A;
+}
+
+/* Lagyan na lng comments para malinis */
+* {
+    box-sizing: border-box;
 }
 
 body {
     margin: 0;
     background-color: var(--color-2);
+    font-family: 'Inter', sans-serif;
 }
 
+/* NAVBAR */
+nav {
+    background-color: var(--color-1);
+    height: 70px;
+    width: 100%;
+    padding: 0 50px;
 
-nav {background-color: var(--color-1); height: 70px; width: 100vw; min-width: 600px; display: flex; align-items: center; justify-content: space-around;}
-nav img {height: 40px; width: 150px; background-color: var(--color-1); box-sizing: border-box;}
-.nav a {position: relative; text-decoration: none; font-family:'Inter', sans-serif; color: var(--color-2); font-size: 8px; font-weight:550; letter-spacing: 0.5px; padding: 0 8px;}
-.nav a::after {content: ""; position: absolute; background-color: #D19924; height: 3px; width: 0; left: 0; bottom: -10px; transition: 0.3s;}
-.nav a:hover:after {width: 100%;}
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* LOGO */
+nav img {
+    height: 40px;
+    width: 150px;
+    object-fit: contain;
+}
+
+/* NAV LINKS CONTAINER */
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+/* NAV LINKS */
+.nav a {
+    position: relative;
+    text-decoration: none;
+    color: var(--color-2);
+    font-size: 14px;
+    font-weight: 550;
+    letter-spacing: 0.5px;
+    padding: 5px 0;
+}
+
+/* HOVER UNDERLINE */
+.nav a::after {
+    content: "";
+    position: absolute;
+    background-color: var(--color-4);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -8px;
+    transition: 0.3s;
+}
+
+.nav a:hover::after {
+    width: 100%;
+}
+
+/* TABLET (para responsive)*/
+@media (max-width: 768px) {
+    nav {
+        padding: 0 25px;
+    }
+
+    .nav {
+        gap: 15px;
+    }
+
+    .nav a {
+        font-size: 12px;
+    }
+
+    nav img {
+        width: 130px;
+    }
+}
+
+/* MOBILE (para responsive)*/
+@media (max-width: 600px) {
+    nav {
+        height: auto;
+        padding: 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .nav a {
+        font-size: 13px;
+    }
+
+    nav img {
+        width: 140px;
+        height: auto;
+    }
+}
+
+/*FOOTER*/
+.footer {
+    background-color: var(--color-5);
+    color: var(--color-1);
+    padding: 55px 7% 30px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 1.7fr 1fr 1.3fr 1fr;
+    gap: 50px;
+    align-items: flex-start;
+}
+
+.footer-brand img {
+    width: 220px;
+    margin-bottom: 18px;
+}
+
+.footer-brand p {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    margin-bottom: 25px;
+    color: var(--color-1);
+}
+
+.footer-socials {
+    display: flex;
+    gap: 18px;
+}
+
+.footer-socials a {
+    width: 34px;
+    height: 34px;
+    background-color: var(--color-1);
+    color: var(--color-5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    font-size: 20px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.footer-socials a:hover {
+    background-color: var(--color-4);
+    color: var(--color-1);
+}
+
+.footer-links h4 {
+    font-size: 16px;
+    margin-bottom: 16px;
+    font-weight: 700;
+    color: var(--color-1);
+}
+
+.footer-links a {
+    display: block;
+    color: var(--color-1);
+    text-decoration: none;
+    margin-bottom: 13px;
+    font-size: 16px;
+    letter-spacing: 0.4px;
+    transition: 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--color-4);
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 70px;
+}
+
+.footer-bottom p {
+    font-size: 16px;
+    letter-spacing: 0.4px;
+    margin: 0;
+    color: var(--color-1);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+
+    .footer-bottom {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 576px) {
+    .aurea-footer {
+        padding: 45px 25px 25px;
+        text-align: center;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .footer-brand img {
+        width: 190px;
+    }
+
+    .footer-socials {
+        justify-content: center;
+    }
+
+    .footer-bottom {
+        margin-top: 40px;
+    }
+}
+
